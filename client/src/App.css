@@ -1,0 +1,38 @@
+/* body{
+    background-color: #ce93d8
+} */
+.b{
+    margin-left:5%
+}
+.cardDiv{
+    text-align: center;
+    color:white;
+    text-shadow: -1px 1px 1px purple,1px 1px 1px purple
+}
+.mycard{
+    margin-top: 30px;
+}
+.auth-card{
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.item{
+    width:30%;
+}
+
+.home-card{
+    max-width: 450px;
+    height:max-content;
+    margin:25px auto;
+}
+.home{
+
+}
