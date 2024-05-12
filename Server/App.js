@@ -5,8 +5,17 @@ const routes = require('./Routes/authen');
 const postroutes = require('./Routes/postR');
 const userroutes = require('./Routes/users')
 
+const {MONGOURI} = require("./valuekey.js")
+
 const PORT = 9000
-mongoose.connect('mongodb://localhost:27017/Server').then(console.log("MongoDB connected")).catch(e=>console.log(e))
+mongoose.connect(MONGOURI)
+mongoose.connection.on("connected", ()=>{
+    console.log("We are connected to server")
+})
+mongoose.connection.on("error", ()=>{
+    console.log("We are not connected to server")
+})
+
 
 app.use(express.json())
 app.use(routes)
